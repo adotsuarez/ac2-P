@@ -36,7 +36,7 @@ main :
 
     /* Ejercicio [P3:Pr1:c] */
     ldr r7, =var4           /* r7 <- &var4 */
-    /* Cargado puntero a aabbccdd */
+    /* Cargado puntero a ddccbbaa */
     ldr r9, =var5           /* r9 <- &var5 */
     /* Cargado segundo puntero (0) */
 
