@@ -4,11 +4,11 @@ var1 : .byte 0b00110010
 var2 : .byte 0b11000000
     .align
 
-/* Variable var3 creada para ejercicio [P3:Pr1:a] */
+/* Variable var3 creada para ejercicio [AC2-P3A1Ex-a] */
 var3 : .byte 0              /* Valor temporal */
     .align 
 
-/* Variables creada para ejercicio [P3:Pr1:c] */
+/* Variables creada para ejercicio [AC2-P3A1Ex-c] */
 var4 : .word 0xddccbbaa
     .align
 var5 : .word 0
@@ -26,15 +26,15 @@ main :
 
     add r0, r11, r12        /* r0 <- r11 + r12 */
     
-    /* Ejercicio [P3:Pr1:a] */
+    /* Ejercicio [AC2-P3A1Ex-a] */
     ldr r3, =var3           /* r3 <- &var3 */
     strb r0, [r3]           /* r0 <- *r3 */
 
-    /* Ejercicio [P3:Pr1:b] */
+    /* Ejercicio [AC2-P3A1Ex-b] */
     strb r11, [r2]          /* *r2 <- r11 */
     strb r12, [r1]          /* *r1 <- r12 */
 
-    /* Ejercicio [P3:Pr1:c] */
+    /* Ejercicio [AC2-P3A1Ex-c] */
     ldr r7, =var4           /* r7 <- &var4 */
     /* Cargado puntero a ddccbbaa */
     ldr r9, =var5           /* r9 <- &var5 */
